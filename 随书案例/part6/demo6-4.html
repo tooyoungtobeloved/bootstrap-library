@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="user-scalable=no, width=device-width,
+		initial-scale=1.0, maximum-scale=1.0">
+		<title>弹性盒布局</title>
+	<style>
+		body {
+			font: 24px helvetica;
+			background: #fff;
+		}
+		.main {
+			min-height: 50px;
+			margin: 0px;
+			padding: 0px;
+			display: flex;
+			flex-flow: row;
+		}
+		.main>article {
+			margin: 4px;
+			padding: 5px;
+			background: grey;
+			flex: 3;
+			order: 2;
+		}
+		.main > nav {
+			margin: 4px;
+			padding: 5px;
+			background: grey;
+			flex: 1;
+			order: 1;
+		}
+		.main > aside {
+			margin: 4px;
+			padding: 5px;
+			background: grey;
+			flex: 1;
+			order: 3;
+		}
+		header, footer {
+			margin: 4px;
+			padding: 5px;
+			min-height: 100px;
+			border: 2px solid grey;
+			background: #fff;
+		}
+		@media all and (max-width: 640px)
+		.main {
+			flex-flow:  column;
+		}
+	.main>article, .main > nav, .main > aside {
+		order: 0;
+	}
+	.main>nav, .main>aside, header, footer {
+		min-height: 50px;
+		max-height: 50px;
+	}
+	}
+	</style>
+	</head>
+	<body>
+		<header>header</header>
+		<div class="main">
+			<article>article</article>
+			<nav>nav</nav>
+			<aside>aside</aside>
+		</div>
+		<footer>footer</footer>
+		<footer style="position:fixed;bottom: 20px; width: 100%;text-align: center; ">
+				<hr>
+				<p>©16信管 16371009金招红. All rights reserved.</p>
+			</footer>
+	</body>
+</html>

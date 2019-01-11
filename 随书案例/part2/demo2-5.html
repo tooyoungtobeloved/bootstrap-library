@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绘制矩形</title>
+</head>
+<body>
+    <canvas id="canvas" width="900" height="600">
+        你的浏览器不支持canvas！请升级
+    </canvas>
+    <script>
+        var canvas=document.getElementById('canvas')
+        var content=canvas.getContext('2d')
+        canvas.style.border="1px solid #000";
+        content.strokeRect(200,50,200,100)
+        content.fillRect(200,200,200,100)
+    </script>
+    <hr>
+    <span><a href="demo2-4.html">返回上一页</a></span>
+    <span><a href="demo2-6.html">下一页</a></span>
+    <footer style="position:fixed;bottom: 20px; width: 100%;text-align: center; ">
+			<hr>
+			<p>©16信管 16371009金招红. All rights reserved.</p>
+	</footer>
+</body>
+</html>

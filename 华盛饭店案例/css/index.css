@@ -1,0 +1,161 @@
+
+ul{
+    list-style: none;
+}
+.navbar-brand{
+    padding: 10px 15px;
+}
+.nav-color{
+    margin-bottom: 0px;
+}
+.nav-color a{
+    font-weight: bolder;
+    font-size: 17px;
+}
+@media screen and (max-width: 768px) {
+    .carousel-caption {
+        display: none;
+    }
+}
+.jumbotron{
+    margin-bottom: 0px;
+    padding-bottom: 200px;
+    text-align: center;
+}
+#jian .head{
+    text-align: center;
+}
+#jian .max .thumb{
+    padding: 4px;
+    max-width: 310px;
+    text-align: center;
+    height: 336px;
+    background-color: #eee;
+    margin-top: 20px;
+}
+.navfour{
+    width: 50px;
+    height: 200px;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+}
+.navfour ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.navfour ul li{
+    width: 100%;
+    height:50px;
+    border: 1px silver dashed;
+    background-color: red;
+    text-align: center;
+    line-height: 50px;
+    /* padding-top:10px; */
+    border-radius: 50%;
+
+}
+.navfour ul li a{
+    color: #ccc;
+}
+.navfour ul li a:hover{
+    color:white;
+    font-size: 1.8em;
+    text-decoration: none;
+    font-weight: bold;
+}
+.head h2{
+    color: #0d0fa5;
+    text-align: center;
+}
+.text h2{
+    text-align: center;
+}
+.md{
+    background-color: #fff;
+    padding: 8px;
+    padding-bottom: 100px;
+    height: 400px;
+    background-color: #e3e3e3;
+}
+.md .img{
+    max-width: 400px;
+}
+.foot h2{
+    text-align: center;
+    color: #0d0fa5;
+}
+#cook .row .last{
+    padding: 8px;
+    padding-bottom: 100px;
+    height:370px;
+    background-color: #efe;
+}
+footer{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #2a2730;
+}
+footer h2{
+    color: white;
+}
+.row .left div{
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+footer .row ul li{
+    color: white;
+    font-size: 1.5em;
+}
+footer span{
+    color: white;
+    font-size: 1.4em;
+}
+.jian-bg{
+    background-image: url(../images/jian-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.peng-bg{
+    background-image: url(../images/peng-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.chao-bg{
+    background-image: url(../images/a.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.zha-bg{
+    background-image: url(../images/zha-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.row input{
+    width: 100%;
+    border-radius: 0;
+    line-height: 22px;
+    font-size: 14px;
+    padding: 14px 17px 14px;
+    outline: none;
+    color: #FFF;
+    height: 50px;
+    border: 1px solid #d5d5d5;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 0 20px;
+    background: rgba(51, 51, 51, 0.61);
+}
+.row textarea{
+    width: 100%;
+    height: 191px;
+    background: rgba(51, 51, 51, 0.61);
+    border: 1px solid #d5d5d5;
+}
+footer{
+    text-align: center;
+    color: white;
+}

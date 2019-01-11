@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>sessionStorage</title>
+	</head>
+	<body>
+		<span>姓名:</span><input type="text" id='name'>
+		<span>年龄:</span><input type="text" id="id">
+		<input type="button"  id="setinfo" value="sessionStorage设置数据" />
+		<input type="button"  id="getinfo" value="sessionStorage获取数据" />
+		<input type="button"  id="clearinfo" value="sessionStorage删除数据" />
+		<hr>
+		<span><a href="demo2-1.html">返回上一页</a></span>
+		<span><a href="demo2-4.html">下一页</a></span>
+		<footer style="position:fixed;bottom: 50px; width: 100%;text-align: center;">
+				<hr>
+				<p>©16信管 16371009金招红. All rights reserved.</p>
+		</footer>
+		<script>
+			document.getElementById('setinfo').onclick=function(){
+				var userinfo=document.getElementById('name').value;
+				var age=document.getElementById('id').value;
+				console.log(age)
+				var user={
+					name:userinfo,
+					age:age,
+				}
+				window.sessionStorage.setItem("user",JSON.stringify(user))
+				console.log(user)
+			}
+			document.getElementById('getinfo').onclick=function(){
+				var value=window.sessionStorage.getItem("user");
+				console.log(value);
+			}
+			document.getElementById('clearinfo').onclick=function(){
+					window.sessionStorage.clear();
+			}
+		</script>
+	</body>
+</html>

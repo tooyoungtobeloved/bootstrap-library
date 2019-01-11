@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<meta charset="utf-8">
+		<title>transitionend事件</title>
+		<style>
+			
+			#myDIV{
+				width: 100px;
+				height: 100px;
+				background: pink;
+				-webkit-transform: width 2s;
+				transform: width 2s;
+			}
+			#myDIV:hover {
+				width: 300px;
+				height: 300px;
+			}
+		</style>
+	</head>
+	<body>
+		<p>将鼠标移动到div元素上，查看过渡结果。</p>
+		<div id="myDIV"></div>
+		<script>
+			var dom= document.getElementById("myDIV");
+			dem.addEventListener("webkitTransitionEnd",myFunction);
+			
+			function myFunction() {
+				this.innerHTML='过渡效果结束';
+				this.style.background='green';
+			}
+		</script>
+		<footer style="position:fixed;bottom: 20px; width: 100%;text-align: center; ">
+				<hr>
+				<p>©16信管 16371009金招红. All rights reserved.</p>
+			</footer>
+	</body>
+</html>

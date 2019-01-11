@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tansform</title>
+<style>
+    #div{
+        width: 266px;
+        height: 526px;
+        background-image:url(img/transform.png);
+        overflow: hidden;
+        background-clip: border-box;
+        background-origin: padding-box;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 60px;
+        top:25px;
+    }
+    #op{
+        width: 266px;
+        height: 526px;
+        overflow: hidden;
+        background-image: url(img/iii.png);
+        position:absolute;
+        top:20px;
+    }
+    #book{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-image: url(img/jjj.png);
+        top:270px;
+        left: 100px;
+        z-index: 299;
+    }
+    #tiao{
+        width: 200px;
+        height: 130px;
+        position:absolute;
+        background-image: url(img/tiao.png);
+        top:350px;
+        left:50px;
+    }
+</style>
+</head>
+<body>
+    <div id="div" style="background-position-x: 0px;background-position-y: 0px;">
+    </div>
+    <div id="op">
+    </div>
+    <div id="book"></div>
+    <div id="tiao">
+        
+    </div>
+    <script>
+        window.onload=function(){
+            var div=document.querySelector('#div')
+            var y=0;
+            var x=90;
+            var bp=document.querySelector('#op')
+            var book=document.querySelector('#book')
+            var a=setInterval(function(){
+                y=y-526;
+                div.style.backgroundPositionY=y+'px';
+                if(y<=-18000){
+                clearInterval(a)
+                }
+            },70)
+            var c=setInterval(function(){
+                x=x+5;
+                book.style.left=x+'px'
+                if(x>170){
+                    clearInterval(c)
+                }
+            },70)
+            var b=setInterval(function(){
+                y=y-526
+                op.style.backgroundPositionY=y+'px'
+                if(y<=-18500){
+                clearInterval(b)
+                }
+            },70)
+        }
+        
+    </script>
+    <div style=" position:absolute; top: 600px;width: 100%;">
+            <hr>
+        <span><a href="part2/demo2-9.html">返回上一页</a></span>
+        <span><a href="index.html">首页</a></span>
+    </div>
+    <footer style="position:fixed;bottom: 20px; width: 100%;text-align: center; ">
+			<hr>
+			<p>©16信管 16371009金招红. All rights reserved.</p>
+		</footer>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="user-scalable=no,
+		width=device-width,initial-scale=1.0, maximum-scale=1.0">
+		<title>栅格系统布局</title>
+	</head>
+	<style type="text/css">
+		.row{
+			width: 100%;
+		}
+		
+		.row :after{
+			clear: left;
+			content: '';
+			display: table;
+		}
+		
+		[class^="col"]{
+			float: left;
+			background-color: #E0E0E0;
+		}
+		.col1{
+			width: 25%;
+		}
+		.col2{
+			width: 50%;
+		}
+		@media (max-width: 768px) {
+			.row{
+				width: 100%;
+			}
+			[class^="col"]{
+				float: none;
+				width: 100%;
+			}
+		}
+	</style>
+	<body>
+		<div class="row">
+			<header>页面</header>
+		</div>
+		<div class="row">
+			<nav class="col1">导航</nav>
+			<div class="col2">主要内容</div>
+			<aside class="col1">侧边栏</aside>
+		</div>
+		<div class="row">
+			<footer>页尾</footer>
+		</div>
+		<footer style="position:fixed;bottom: 20px; width: 100%;text-align: center; ">
+				<hr>
+				<p>©16信管 16371009金招红. All rights reserved.</p>
+			</footer>
+	</body>
+</html>

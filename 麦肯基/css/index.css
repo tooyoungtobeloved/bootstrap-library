@@ -1,0 +1,66 @@
+*{
+    font-family: fantasy;
+}
+.navbar{
+    margin-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size:1.3em;
+    font-weight: bold;
+}
+.navbar-brand{
+    padding: 0px;
+}
+.jumbotron{
+    margin-bottom: 0px;
+    text-align: center;
+}
+.header,.text{
+    text-align: center;
+}
+.next .row>div{
+    background-color: #eee;
+    padding: 5px;
+    height: 340px;
+}
+footer{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #333;
+    color: white;
+}
+footer .foot{
+    text-align: center;
+    font-size: 1.4em;
+}
+footer .foot ul{
+    margin:0px;
+    padding: 0px;
+    list-style-type:circle;
+}
+.mid{
+    width: 640px;
+    margin: 0px auto;
+}
+.row input{
+    width: 100%;
+    border-radius: 0;
+    line-height: 22px;
+    font-size: 14px;
+    padding: 14px 17px 14px;
+    outline: none;
+    color: #FFF;
+    height: 50px;
+    border: 1px solid #d5d5d5;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 0 20px;
+    background: rgba(51, 51, 51, 0.61);
+}
+.row textarea{
+    width: 100%;
+    height: 191px;
+    background: rgba(51, 51, 51, 0.61);
+    border: 1px solid #d5d5d5;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>canvas for angles</title>
+    <style>
+        #canvas{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas" width="900" height="600">
+        你的浏览器不支持canvas！请升级
+    </canvas>
+    <script>
+        var canvas=document.getElementById('canvas')
+        var content=canvas.getContext('2d')
+        content.beginPath();
+        content.moveTo(100,100)
+        content.lineTo(300,100)
+        content.lineTo(300,500)
+        content.closePath();
+        content.stroke();
+    </script>
+    <hr>
+    <span><a href="demo2-2.html">返回上一页</a></span>
+    <span><a href="demo2-5.html">下一页</a></span>
+    <footer style="position:fixed;bottom: 20px; width: 100%;text-align: center; ">
+		<hr>
+		<p>©16信管 16371009金招红. All rights reserved.</p>
+	</footer>
+</body>
+</html>

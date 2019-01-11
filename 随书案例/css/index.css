@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin: 0px; padding: 0px;list-style: none;text-decoration: none;list-style: none;color: black;}
+a:active{
+color: blue;
+}
+nav{
+	text-align:center;
+	position:relative;
+}
+#menu li{
+	float: left;
+	width: 100px;
+	line-height: 50px;	
+	margin-left:100px;
+	
+	background-color: #CCFFFF;
+}
+#menu li ul li{
+	line-height: 25px;
+	text-align: center;
+	float: none;
+	line-height: inherit;
+	margin-left:0px;
+		
+}
+.second{display: none;}
+#menu li:hover ul.second{
+	display: block;
+} 
+#menu li:hover{
+	background-color: #99CCFF;
+	cursor: pointer;
+	transition: .3s all ease-in-out;
+}
+#menu li ul li:hover{
+	background-color: #99CCFF;
+	font-size: 22px;
+	box-shadow: 2px 2px 1px #99CCFF;
+	cursor: pointer;
+	letter-spacing:8px;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>canvasarc</title>
+</head>
+<body>
+    <canvas id="canvas" width="400" height="300">
+            你的浏览器不支持canvas！请升级
+    </canvas>
+    <script>
+        var canvas=document.getElementById('canvas')
+        var content=canvas.getContext('2d')
+        canvas.style.border="1px solid #000";
+        content.beginPath();
+        content.arc(100,100,100,0,2*Math.PI,true);
+        content.closePath();
+        content.fillStyle='pink'
+        content.fill();
+        content.beginPath();
+        content.strokeStyle='#fff';
+        content.arc(100,100,25,Math.PI/6,5*Math.PI/6,false);
+        content.stroke();
+        //content.closePath();
+    </script>
+    <hr>
+    <span><a href="demo2-6.html">返回上一页</a></span>
+    <span><a href="demo2-8.html">下一页</a></span>
+    <footer style="position:fixed;bottom: 20px; width: 100%;text-align: center; ">
+			<hr>
+			<p>©16信管 16371009金招红. All rights reserved.</p>
+		</footer>
+</body>
+</html>

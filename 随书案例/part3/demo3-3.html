@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>JavaScript操作video对象</title>
+</head>
+<body>
+<video id="video" src="video/movie.mp4"">您的浏览器不支持video标签</video>
+<br/><br/>
+<input type="button" value="播放/暂停" onclick="playpause()"/>
+</body>
+<script>
+    var video=document.getElementById("video");
+    function playpause()
+    {
+		if(video.paused)
+		    video.play();
+		else
+		    video.pause();
+	}
+	</script>
+	<footer style="position:fixed;bottom: 20px; width: 100%;text-align: center; ">
+			<hr>
+			<p>©16信管 16371009金招红. All rights reserved.</p>
+		</footer>
+</html>
